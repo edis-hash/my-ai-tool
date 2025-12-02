@@ -98,7 +98,7 @@ def generate(topic):
     st.info("正在呼叫 Google Gemini (美国节点)...")
     try:
         genai.configure(api_key=GOOGLE_API_KEY)
-        model = genai.GenerativeModel('gemini-1.5-flash')
+        model = genai.GenerativeModel('gemini-2.5-flash')
         
         prompt = f"""
         分析主题：【{topic}】。
